@@ -135,11 +135,11 @@ ortalama = (vize * 0.4) + (final*0.6)
 # eğer vize finalin 2 katı ise kullanıcı kaldı
 # bunun dışındaki tüm durumlarda kullanıcı geçti yazdırmak istiyoruz.
 
-if final <40:
-    print("Kaldınız")
-elif ortalama < 50:
-    print("Kaldınız")
-elif (vize*2) == final:
+#condition-logic
+#or and
+#true or false => true => sol ve sağındaki koşullardan en az birisini true olmasını istiyor
+#true and false => false => sol ve sağdaki koşulların ikisininden true olmasını ister
+if final <40 or ortalama < 50 or vize == final*2: 
     print("Kaldınız")
 else:
     ("Geçtiniz")
