@@ -145,3 +145,40 @@ else:
     ("Geçtiniz")
 
 #karar yapıları end
+
+#döngüler start
+for i in range(10):
+    print(i)
+
+ogrenciler = ["Volkan", "Süeda", "Zühal","Selen", "Ümit"]
+#length
+print(len(ogrenciler))
+
+for i in range(len(ogrenciler)):
+    if i> 3:
+        break
+    
+    print(f"{i}. Öğrenci: {ogrenciler[i]}")
+
+for i in range(0,10):
+    pass #her hangi bir döngünün body sini boş bırakmayı sağlar
+for i in ogrenciler:
+    print(f"Öğrenci: {i}")
+
+#continue => iterasyondaki current değer o değeri atlayıp devam ediyor
+for i in ogrenciler:
+    if i == "Volkan":
+        continue
+    print(f"Öğrenci: {i}")
+
+#whie booleanDeger  değer doğru olduğu müddetçe devam edecek
+#ctrl +c => terminali durduran manual işlem
+
+i=0
+while i<10:
+    i=i+1
+    if i == 3:
+        break
+    print(f"Whike içerisindeki 1 değeri: {i}")
+
+#döngüler end
