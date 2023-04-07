@@ -3,6 +3,7 @@ def ciftsayilar():
     x = int(input ("Lütfen bir sayı giriniz: "))
     y= int(input("alt limit belirleryiniz"))
     if x>0:
+        #limit eklemek için
         if y%2==0:
             for i in range(y,x,2):
                 list2.append(i)
