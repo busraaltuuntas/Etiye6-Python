@@ -182,3 +182,31 @@ while i<10:
     print(f"Whike içerisindeki 1 değeri: {i}")
 
 #döngüler end
+
+#fonksiyonlar start
+#definition
+def ortalamaHesapla():
+    final = 60
+    vize= 100
+    ortalama =(vize*0.4) +(final*0.6)
+    print(ortalama)
+
+def ortalamaHesaplaVeDondur(vize, final) -> float:
+    return (vize*0.4) +(final*0.6)
+    #expression
+    #return bize fonksiyonun geri döner bir değeri oldunu 
+
+#triggerlamak, çalıştırmak,execute etmek, methodu çağırmak,fonksiyonu çalğırmak
+ortalamaHesapla()   
+ortalamaHesapla()
+ortalamaHesapla()
+
+#benimOrtalamam = ortalamaHesaplaVeDondur()
+benimOrtalamam2= ortalamaHesapla() # => none
+#print(benimOrtalamam)
+print(ortalamaHesaplaVeDondur(100,50))
+print(ortalamaHesaplaVeDondur(70,100))
+print(benimOrtalamam2)
+
+#return keywordu olmayanlar none değeri döndürür geri dönen olmadığı için 
+#fonksiyonlar end
