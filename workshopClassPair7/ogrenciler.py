@@ -1,20 +1,19 @@
-class Ogrenci:
-     def name(self,name)->str:
-         print(name)
-     def number(self,number)->int:
-          print (number) 
- 
-ogrenci1=Ogrenci()
-ogrenci1.name=("Musa")
-ogrenci1.number=990
-ogrenci2=Ogrenci()
-ogrenci2.name=("busra")
-ogrenci2.number=1015
-ogrenci3=Ogrenci()
-ogrenci3.name=("Zuhal")
-ogrenci3.number=850
+class Ogrenci():
+   ogreciListe =[]
+   def __init__(self, name, number):
+      self.name =name
+      self.number = number
 
-print(ogrenci1.name,ogrenci1.number)
-print(ogrenci2.name,ogrenci2.number)
-print(ogrenci3.name,ogrenci3.number)
+   def ekle(liste):
+      ad = input("öğrenci adı: ")
+      numara= input("öğrenci numarası: ")
+      ogrenci1 =Ogrenci(ad,numara)
+      liste.append(ogrenci1)
+   
+   def oku(liste):
+      print(f"Öğrenci sayısı : {len(liste)}")
+      for i in liste:
+         print(f"ismi : {i.name}, numarası: {i.number}")
+      
+      
 

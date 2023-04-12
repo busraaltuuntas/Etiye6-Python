@@ -1,24 +1,31 @@
 from ogrenciler import Ogrenci
 from ogretmen import Ogretmen
 
-print("Öğrenciler")
-ogrenci4=Ogrenci()
-ogrenci4.name=("Ezgi")
-ogrenci4.number=650
-ogrenci5=Ogrenci()
-ogrenci5.name=("Furkan")
-ogrenci5.number=150
-print(ogrenci4.name,ogrenci4.number)
-print(ogrenci5.name,ogrenci5.number)
-print("Öğretmenler")
+listeOgrenci =[]
+listeOgretmen =[]
 
+def ogrenciKayit():
+    Ogrenci.ekle(listeOgrenci)
 
-ogretmen1=Ogretmen()
-ogretmen1.name=("Halit")
-ogretmen1.depart=("Yazılım")
-print(ogretmen1.name,ogretmen1.depart)
-ogretmen2=Ogretmen()
-ogretmen2.name=("Engin")
-ogretmen2.depart=("Python")
-print(ogretmen2.name,ogretmen2.depart)
+def ogrenciOku():
+    Ogrenci.oku(listeOgrenci)
 
+def ogretmenKayit():
+    Ogretmen.ekle(listeOgretmen)
+
+def ogretmenOku():
+    Ogretmen.oku(listeOgretmen)
+
+while True:
+    islem = input("Yapmak istediniz işlemi seçiniz: \n1-Öğrenci eklme  \n2-Öğretmen ekleme \n3-Öğrenci Listele \n4-Öğretmen Listele \n5-Çıkış : ")
+    if islem == "1":
+        ogrenciKayit()
+    elif islem == "2":
+        ogretmenKayit()
+    elif islem == "3":
+        ogrenciOku()
+    elif islem == "4":
+        ogretmenOku()
+    elif islem == "5":
+        break
+print("işlem sonlandırıldı")
